@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário do Igor</title>
+</head>
+
+
+<body>
+  
+<form action="C:\Users\user\Documents\JavaScript\Formulário de teste\ex003.html" method="POST"> 
+ <input type="hidden" name="recipient" value="igor.vignola@gmail.com"> <!-- Pode ser qualquer endereço de email -->
+ <input type="hidden" name="redirect" value="http://127.0.0.1:5500/index.html#"> <!-- Após o envio, o usuário será redirecionado para a página configurada aqui -->
+ <input type="hidden" name="subject" value="teste de assunto">  <!-- Assunto da mensagem -->
+ <input type="hidden" name="email" value="igor.vignola@gmial.com">   <!-- Deve ser uma conta de email ativa em seu domínio -->
+ 
+ <p> 
+ Nome:<br /> 
+ <input type="text" size="30" name="Nome" required> 
+ </p>   
+ 
+ <p>
+ E-mail:<br /> 
+ <input type="text" size="30" name="replyto" required> 
+ </p>   
+ 
+ <p> 
+ Comentários:<br /> 
+ <textarea rows="5" cols="42" name="Comentários" required></textarea>
+
+ </p>   
+ <section required class="Adicionais">
+    <span>O que você gostaria de adicionar ao pedido da salada?</span>
+    <br>
+    <input type="checkbox" name="Adicional" id="alface" value="alface">
+    <label for="alface">Alface</label>
+    <input type="checkbox" name="Adicional" id="tomate" value="tomate">
+    <label for="tomate">Tomate</label>
+    <input type="checkbox" name="Adicional" id="cebola" value="cebola">
+    <label for="cebola">Cebola</label>
+  </section>
+ 
+ <p> 
+ <input type="submit"  value="Enviar"> 
+ <input type="reset" name="Apagar" value="Apagar"> </p> 
+ </form>
+ 
+</body>
+</html>
+
+
+
+
+
+
